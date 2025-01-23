@@ -1,0 +1,62 @@
+.tagcloud-wrap {
+  background: linear-gradient(145deg, #0f2027, #203a43, #2c5364); /* Dark space gradient */
+  float: right;
+  width: 53%;
+  height: 115%;
+  margin-top: -3%;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden; /* Prevent overflow from animations */
+}
+
+.tagcloud {
+  color: #ffffff; /* Golden yellow */
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 650;
+  margin: 10% auto;
+  animation: fadeIn 2s ease-in-out; /* Add a fade-in effect */
+}
+
+.tagcloud--item {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.tagcloud--item:hover {
+  color: #907f7f; /* Neon cyan */
+  transform: scale(1.3); /* Scale up on hover */
+  text-shadow: 0 0 10px #7df9ff, 0 0 20px #7df9ff; /* Glow effect */
+}
+
+.tagcloud-wrap::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8) 70%);
+  pointer-events: none; /* Allow interactivity beneath the pseudo-element */
+  animation: twinkle 5s infinite; /* Simulated star twinkle */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
