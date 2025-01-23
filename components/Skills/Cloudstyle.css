@@ -40,6 +40,13 @@
   animation: twinkle 5s infinite; /* Simulated star twinkle */
 }
 
+/* Disable tagcloud-wrap on mobile */
+@media (max-width: 768px) {
+  .tagcloud {
+    display: none;
+  }
+}
+
 /* Animations */
 @keyframes fadeIn {
   from {
