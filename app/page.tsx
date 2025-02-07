@@ -14,7 +14,7 @@ export default function Home() {
         <Skills />
         <Encryption />
         <Edu />
-{/*         <Projects/> */}
+        <Projects/>
       </div>
     </main>
   );
