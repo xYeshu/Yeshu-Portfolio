@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -19,14 +18,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-
     <html lang="en">
-      <link rel="icon" type="image/ico" sizes="16x16" href="/favicon.ico"></link>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/ico" sizes="16x16" href="/favicon.ico" />
+      </head>
       <body
         className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
-{/*         <StarsCanvas /> */}
-{/*         <StarsCanvas /> */}
+        {/* <StarsCanvas /> Uncomment if needed */}
         <Navbar />
         {children}
         <Footer />
