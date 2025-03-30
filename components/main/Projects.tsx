@@ -23,8 +23,9 @@ const Projects = () => {
         <a  className="w-[350px] h-[400px] flex flex-col cursor-pointer z-50  rounded-lg ">
           <ProjectCard
             src="/NextWebsite.png"
-            title="GPT Bharat"
-            description="[In Progress] A full stack industry ready App inspired from Chat GPT with modern features. Tech stack used: HTML,CSS,Javascript, Node js, Typescript, Express , Mongo DB, Postman, Tailwind, OAuth"
+            title="DarkGPT"
+            description="A Production Ready Unfiltered AI built on top of Google API designed to assist ethical hackers by offering
+detailed insights into penetration testing strategies, security vulnerabilities, and exploitation techniques. Tech stack used: HTML,CSS,Javascript, Node js, Typescript, Express , Mongo DB, Postman, Tailwind, OAuth"
           />
           
         </a>
